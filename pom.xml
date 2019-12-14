@@ -41,10 +41,19 @@
         <fileupload.version>1.3.3</fileupload.version>
 
         <common.net.version>3.6</common.net.version>
+
+        <spring.boot.starter.dubbo.version>0.2.0</spring.boot.starter.dubbo.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${spring.boot.starter.dubbo.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
